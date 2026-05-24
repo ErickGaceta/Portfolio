@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url(./assets/OpenSans-VariableFont_wdth\,wght.ttf) format("truetype");
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    line-height: 1.6;
+    width: 100%;
+}
+nav {
+    background-color: #f8f8f8;
+    padding: 1em 2em;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    position: fixed;
+}
+
+nav > ul {
+    display: flex;
+    list-style: none;
+    gap: 2em;
+}
+
+nav > ul > li > a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+nav > ul > li > a:hover {
+    color: #007BFF;
+}
+
+section {
+    background: url(./assets/hero-bg.jpg) no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+section h1 {
+    font-size: 3em;
+    color: #424242;
+    margin-bottom: 0.5em;
+}
+
+section h2 {
+    font-size: 2em;
+    color: #424242;
+    margin-bottom: 0.5em;
+}
+
+section p {
+    font-size: 1.5em;
+    color: #3d3d3d;
+}
+
+main {
+    padding: 2em;
+}
+
+h3 {
+    font-size: 1em;
+    color: #424242;
+    margin-bottom: 0.5em;
+}
+
+footer {
+    background-color: #f8f8f8;
+    padding: 1em 2em;
+    text-align: center;
+    margin-top: 2em;
+}
+
+footer #brand-logo {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    margin-top: 0.5em;
+}
+
+footer #brand-logo img{
+    width: 24px;
+    height: 24px;
+}
