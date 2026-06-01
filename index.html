@@ -1,36 +1,251 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./mobile.css">
+    <link rel="stylesheet" href="./keyframes.css">
+    <link rel="stylesheet" href="./sections.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=open_in_new" />
 </head>
+
 <body>
     <nav id="nav">
         <ul>
             <li><a href="#hero" class="nav-link active">Home</a></li>
-            <li><a href="#about" class="nav-link">About</a></li>
             <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#learning-journal" class="nav-link">Case Study</a></li>
             <li><a href="#certificates" class="nav-link">Certificates</a></li>
             <li><a href="#resume" class="nav-link">Resumé</a></li>
         </ul>
     </nav>
 
+
     <main>
-        <section id="hero" class="content-section">
-            <h1>Welcome to My Portfolio</h1>
-            <p>Discover my projects, skills, and experience.</p>
+        <section id="hero" class="hero content-section" style="height:100vh;">
+            <div class="hero-content">
+                <div class="hero-top">
+                    <div class="left-side">
+                        <img src="https://avatars.githubusercontent.com/ErickGaceta" alt="Profile Picture"
+                            class="profile-pic">
+                    </div>
+
+                    <div class="right-side">
+                        <h1 class="hero-name">Erick Gaceta</h1>
+                        <p class="hero-kicker">Computer Science</p>
+                    </div>
+                </div>
+
+                <div class="hero-bottom">
+                    <h2 class="hero-title">
+                        Building practical web systems and backend-driven applications
+                    </h2>
+
+                    <p class="hero-subtitle">
+                        Focused on Laravel, PHP, JavaScript, and database-backed projects with real-world logic.
+                    </p>
+
+                    <div class="hero-featured">
+                        <span>FEATURED PROJECT:</span>
+                        <a class="featured"
+                            href="https://github.com/ErickGaceta/BaguioCentralUniversity_LibraryManagementSystem/releases/tag/v1.0.8">
+                            Library Management System
+                            <span class="material-symbols-outlined">
+                                open_in_new
+                            </span>
+                        </a>
+                    </div>
+
+                    <div class="hero-actions">
+                        <a class="btn primary" href="#projects">View Projects</a>
+                        <a class="btn secondary" href="https://github.com/">GitHub</a>
+                        <a class="btn ghost" href="resume.pdf">Resume</a>
+                    </div>
+
+                </div>
+
+
+            </div>
         </section>
 
-        <section id="about" class="content-section">
-            <h2>About Me</h2>
-            <p>Learn more about my background and interests.</p>
+        <section id="projects" class="projects" style="height:130vh;">
+        
+            <div class="section-header">
+                <h2>Systems Built</h2>
+                <p>
+                    OJT, contract-based, and academic systems focused on role-based workflows,
+                    backend logic, and database-driven application design.
+                </p>
+            </div>
+        
+            <!-- FEATURED: OJT SYSTEM -->
+            <div class="featured-project">
+        
+                <div class="featured-label">Featured System</div>
+        
+                <h3>Learning Journal System (OJT)</h3>
+        
+                <p>
+                    An internal training system designed to track employee learning progress,
+                    structured documentation, and training record management within an organizational workflow environment.
+                </p>
+        
+                <div class="tech-stack">
+                    <span>Laravel</span>
+                    <span>PHP</span>
+                    <span>MySQL</span>
+                    <span>JavaScript</span>
+                </div>
+        
+                <a class="project-link" href="https://github.com/ErickGaceta/LearningJournalSystem">
+                    View GitHub Repository
+                </a>
+        
+            </div>
+        
+            <!-- CONTRACT SYSTEMS -->
+            <div class="project-category">
+        
+                <h3>Contract Systems</h3>
+        
+                <div class="project-grid">
+        
+                    <div class="project-card" onclick="openModal('billingModal')">
+                        <h4>Billing Enrolment System</h4>
+                        <p>Contract-based enrollment and billing management system.</p>
+                        <span class="hint">Click to preview</span>
+                    </div>
+        
+                    <div class="project-card" onclick="openModal('elmsModal')">
+                        <h4>eLearning Management System</h4>
+                        <p>Role-based learning platform for instructors and students.</p>
+                        <span class="hint">Click to preview</span>
+                    </div>
+        
+                </div>
+            </div>
+        
+            <!-- ACADEMIC SYSTEM -->
+            <div class="project-category">
+        
+                <h3>Academic System</h3>
+        
+                <div class="project-grid">
+        
+                    <div class="project-card">
+                        <h4>Library Management System</h4>
+                        <p>
+                            Academic thesis system implementing library workflows including
+                            borrowing, inventory tracking, and administrative record management.
+                        </p>
+                        <a href="https://github.com/ErickGaceta/BaguioCentralUniversity_LibraryManagementSystem">GitHub</a>
+                    </div>
+        
+                </div>
+            </div>
+        
         </section>
 
-        <section id="projects" class="content-section">
-            <h2>Projects</h2>
-            <p>Explore my latest work and contributions.</p>
+        <section class="case-study" id="learning-journal" style="height: max-content;">
+        
+            <div class="case-header">
+                <h1>Case Study</h1>
+                <h2>Learning Journal System</h2>
+                <p class="subtitle">
+                    OJT internal training system for structured documentation and training record management.
+                </p>
+            </div>
+        
+            <!-- PROBLEM -->
+            <div class="case-block">
+                <h4>Problem</h4>
+                <p>
+                    Trainers manually filled out Word templates, printed documents, signed them,
+                    and submitted physical copies for record-keeping. This process was slow,
+                    inconsistent, and difficult to manage at scale.
+                </p>
+            </div>
+        
+            <!-- OBJECTIVE -->
+            <div class="case-block">
+                <h4>Objective</h4>
+                <p>
+                    To digitize training documentation by centralizing training records,
+                    standardizing outputs, and enabling structured submission of employee training logs.
+                </p>
+            </div>
+        
+            <!-- ROLES -->
+            <div class="case-block">
+                <h4>System Roles</h4>
+        
+                <div class="role-grid">
+                    <div class="role-card">
+                        <h5>Admin (MIS)</h5>
+                        <p>Manages system oversight and user administration.</p>
+                    </div>
+        
+                    <div class="role-card">
+                        <h5>HR / Secretary</h5>
+                        <p>Encodes training schedules and manages training data.</p>
+                    </div>
+        
+                    <div class="role-card">
+                        <h5>Employee</h5>
+                        <p>Submits training documentation outputs per assigned activity.</p>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- DATA MODEL -->
+            <div class="case-block">
+                <h4>Data Model (Simplified)</h4>
+        
+                <ul class="db-list">
+                    <li><strong>Roles Table</strong> – Defines system access levels</li>
+                    <li><strong>Training Table</strong> – Stores training schedules and activity details</li>
+                    <li><strong>Document Table</strong> – Stores employee-submitted outputs</li>
+                    <li><strong>Users Table</strong> – Handles authentication and role mapping</li>
+                </ul>
+            </div>
+        
+            <!-- WORKFLOW -->
+            <div class="case-block">
+                <h4>Workflow</h4>
+        
+                <div class="workflow">
+                    <div>HR encodes training schedules</div>
+                    <div class="arrow">→</div>
+                    <div>Employees access assigned training</div>
+                    <div class="arrow">→</div>
+                    <div>Employees submit documentation</div>
+                    <div class="arrow">→</div>
+                    <div>Admin reviews and manages records</div>
+                </div>
+            </div>
+        
+            <!-- CONTRIBUTION -->
+            <div class="case-block highlight">
+                <h4>Key Contribution</h4>
+                <p>
+                    Replaced a manual Word-based documentation workflow with a structured digital system,
+                    improving consistency, accessibility, and centralized record management.
+                </p>
+            </div>
+        
+            <!-- CONSTRAINT -->
+            <div class="case-block note">
+                <h4>Development Context</h4>
+                <p>
+                    Built under OJT constraints without formal SDLC documentation, focusing on
+                    functional implementation and role-based workflow correctness.
+                </p>
+            </div>
+        
         </section>
 
         <section id="certificates" class="content-section">
@@ -44,6 +259,9 @@
         </section>
 
     </main>
+
+    <span id="right" class="decor"></span>
+    <span id="left" class="decor"></span>
 
     <footer>
         <div id="contact">
@@ -65,6 +283,69 @@
         </div>
     </footer>
 
+    <div id="billingModal" class="modal">
+        <div class="modal-content">
+    
+            <span class="close" onclick="closeModal('billingModal')">&times;</span>
+    
+            <h2>Billing Enrolment System</h2>
+    
+            <p>
+                Contract-based system for enrollment and billing workflows
+                supporting student registration, class assignment, and billing tracking.
+            </p>
+    
+            <div class="tech">
+                <h4>Tech Stack</h4>
+                <p style="padding: 0; margin: 0;">Pure PHP  MySQL  HTML  CSS  JavaScript</p>
+            </div>
+    
+            <h4>Key Functions</h4>
+            <ul>
+                <li>Student enrollment processing</li>
+                <li>Class assignment system</li>
+                <li>Billing record generation</li>
+                <li>Administrative management</li>
+            </ul>
+    
+            <a class="btn primary" href="https://github.com/your-repo" target="_blank">View GitHub</a>
+    
+        </div>
+    </div>
+
+    <div id="elmsModal" class="modal">
+        <div class="modal-content">
+    
+            <span class="close" onclick="closeModal('elmsModal')">&times;</span>
+    
+            <h2>eLearning Management System</h2>
+    
+            <p>
+                Contract-based LMS with role-based workflows for admin, instructors,
+                and students managing modules, schedules, and submissions.
+            </p>
+    
+            <div class="tech">
+                <h4>Tech Stack</h4>
+                <p style="padding: 0; margin: 0;">PHP MySQL HTML CSS JavaScript</p>
+            </div>
+    
+            <h4>Core Features</h4>
+            <ul>
+                <li>Role-based access control</li>
+                <li>Module distribution system</li>
+                <li>Submission tracking</li>
+                <li>Schedule management</li>
+            </ul>
+    
+            <a class="btn primary" href="https://github.com/your-repo" target="_blank">View GitHub</a>
+    
+        </div>
+    </div>
+    
+    </section>
+
     <script src="./index.js"></script>
 </body>
+
 </html>

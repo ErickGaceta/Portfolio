@@ -1,0 +1,7 @@
+@media (max-width: 768px) {
+    .nav-link {
+        color: transparent;
+        transition: 0.5s ease-in-out;
+        font-size: 0.8rem;
+    }
+}
