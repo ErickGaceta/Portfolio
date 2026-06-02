@@ -65,7 +65,7 @@ body::after {
         var(--red-color) 66.67%, var(--black-color) 66.67%, 
         var(--black-color) 83.33%, var(--red-color) 83.33%, 
         var(--red-color) 100%);
-    height: 200vh;
+    height: 10000px;
     top: 0;
 }
 
