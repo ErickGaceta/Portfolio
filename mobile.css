@@ -373,6 +373,10 @@
         padding: 1.75em 2em;
     }
 
+    section {
+        height: max-content !important;
+    }
+
     section h1 {
         font-size: 2.5em;
     }
@@ -386,6 +390,11 @@
     }
 
     /* --- Hero --- */
+    #hero {
+        padding-top: 8rem;
+        padding-bottom: 3rem;
+    }
+
     .left-side img {
         width: 12rem !important;
     }
