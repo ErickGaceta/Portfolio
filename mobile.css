@@ -1,7 +1,647 @@
+/* ============================================================
+   RESPONSIVE MEDIA QUERIES — Full Site
+   Covers: Base (nav, body, decor, section, footer) +
+           Hero | Projects | Modal | Case Study
+   Breakpoints: 480 | 768 | 1024 | 1200 | 1201+
+   ============================================================ */
+
+/* ----------------------------------------------------------
+   MOBILE — max-width: 480px
+   ---------------------------------------------------------- */
+@media (max-width: 480px) {
+
+    /* --- Base --- */
+    .decor {
+        width: 8px;
+    }
+
+    nav {
+        padding: 0.75em 1em;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 0.5em;
+    }
+
+    nav .logo img {
+        width: 32px;
+        height: 32px;
+    }
+
+    nav .logo p {
+        font-size: 0.45em;
+    }
+
+    #brand-logo {
+        gap: 0.6em;
+        margin-top: 0.3em;
+    }
+
+    #brand-logo img {
+        width: 18px;
+        height: 18px;
+    }
+
+    main {
+        padding: 1em 1.25em;
+    }
+
+    section {
+        height: fit-content !important;
+    }
+
+    section h1 {
+        font-size: 1.8em;
+    }
+
+    section h2 {
+        font-size: 1.3em;
+    }
+
+    section p {
+        font-size: 1em;
+    }
+
+    h3 {
+        font-size: 0.9em;
+    }
+
+    footer {
+        padding: 0.75em 1em;
+        margin-top: 1.5em;
+    }
+
+    footer p {
+        font-size: 0.6em;
+    }
+
+    /* --- Hero --- */
+
+    #hero {
+        padding-top: 10rem;
+        padding-bottom: 2rem;
+    }
+
+    .profile-pic {
+        width: 8rem;
+    }
+
+    .hero-top {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+
+    .hero-top .right-side {
+        align-items: center;
+        text-align: center;
+    }
+
+    .hero-kicker {
+        font-size: 0.75rem !important;
+        text-align: center !important;
+    }
+
+    .hero-title {
+        font-size: 1.6rem !important;
+        letter-spacing: .1em;
+        text-align: justify !important;
+        text-justify: inter-word;
+    }
+
+    .hero-subtitle {
+        font-size: 0.85rem;
+    }
+
+    .hero-featured {
+        padding: 0.6em 0.8em;
+    }
+
+    .hero-featured span {
+        font-size: 0.7rem;
+    }
+
+    .hero-actions {
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+        margin-top: 1.2em;
+    }
+
+    .btn {
+        width: 100%;
+        text-align: center;
+        padding: 0.65em 1em;
+        font-size: 0.85rem;
+    }
+
+    /* --- Projects --- */
+    .projects {
+        padding: 3rem 5% !important;
+    }
+
+    .section-header {
+        margin-bottom: 2rem;
+    }
+
+    .section-header h2 {
+        font-size: 1.4rem;
+    }
+
+    .featured-project {
+        padding: 1.2rem !important;
+        margin-bottom: 0rem !important;
+    }
+
+    .project-grid {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .project-card {
+        padding: 1rem !important;
+    }
+
+    .project-category {
+        margin-top: 2rem !important;
+    }
+
+    /* --- Modal --- */
+    .modal-content {
+        padding: 1.25rem !important;
+        gap: 0.75rem !important;
+    }
+
+    .modal-content h2 {
+        font-size: 1.2rem !important;
+    }
+
+    .modal-content p {
+        font-size: 0.85rem !important;
+    }
+
+    .modal-content ul li {
+        margin-left: 1rem !important;
+    }
+
+    .close {
+        font-size: 1.2rem !important;
+        right: 8px !important;
+    }
+
+    /* --- Case Study --- */
+    .case-study {
+        padding: 3rem 5% !important;
+    }
+
+    .case-header h3 {
+        font-size: 1.4rem !important;
+    }
+
+    .role-grid {
+        grid-template-columns: 1fr !important;
+    }
+
+    .case-block {
+        padding: 1rem !important;
+        margin-bottom: 1.5rem !important;
+    }
+
+    .workflow {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+    }
+}
+
+/* ----------------------------------------------------------
+   SMALL TABLET — max-width: 768px
+   ---------------------------------------------------------- */
 @media (max-width: 768px) {
-    .nav-link {
-        color: transparent;
-        transition: 0.5s ease-in-out;
-        font-size: 0.8rem;
+
+    /* --- Base --- */
+    .decor {
+        width: 12px;
+    }
+
+    nav {
+        padding: 0.85em 1.25em;
+    }
+
+    nav .logo img {
+        width: 38px;
+        height: 38px;
+    }
+
+    nav .logo p {
+        font-size: 0.48em;
+    }
+
+    #brand-logo img {
+        width: 20px;
+        height: 20px;
+    }
+
+    main {
+        padding: 1.5em 1.75em;
+    }
+
+    section {
+        height: fit-content !important;
+    }
+
+    section h1 {
+        font-size: 2.2em;
+    }
+
+    section h2 {
+        font-size: 1.6em;
+    }
+
+    section p {
+        font-size: 1.2em;
+    }
+
+    h3 {
+        font-size: 0.95em;
+    }
+
+    footer {
+        padding: 0.9em 1.5em;
+    }
+
+    /* --- Hero --- */
+
+    #hero {
+        padding-top: 12rem;
+        padding-bottom: 2.5rem;
+    }
+    .profile-pic {
+        width: 10rem;
+    }
+
+    .hero-top {
+        flex-direction: column;
+        gap: 1.25rem !important;
+        text-align: center;
+    }
+
+    .hero-top .right-side {
+        align-items: center;
+        text-align: center;
+    }
+
+    .hero-title {
+        font-size: 1.6rem !important;
+    }
+
+    .hero-subtitle {
+        font-size: 0.9rem !important;
+    }
+
+    .hero-actions {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .btn {
+        font-size: 0.875rem;
+    }
+
+    /* --- Projects --- */
+    .projects {
+        padding: 4rem 6% !important;
+    }
+
+    .section-header h2 {
+        font-size: 1.6rem !important;
+    }
+
+    .featured-project {
+        padding: 1.5rem !important;
+        margin-bottom: 3rem !important;
+    }
+
+    .project-grid {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    /* --- Modal --- */
+    .modal-content {
+        padding: 1.5rem !important;
+    }
+
+    /* --- Case Study --- */
+    .case-study {
+        padding: 4rem 6% !important;
+    }
+
+    .case-header h3 {
+        font-size: 1.6rem !important;
+    }
+
+    .role-grid {
+        grid-template-columns: 1fr !important;
+    }
+
+    .workflow {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+    }
+}
+
+/* ----------------------------------------------------------
+   TABLET / SMALL LAPTOP — max-width: 1024px
+   ---------------------------------------------------------- */
+@media (max-width: 1024px) {
+
+    /* --- Base --- */
+    .decor {
+        width: 15px;
+    }
+
+    nav {
+        padding: 0.9em 1.5em;
+    }
+
+    nav .logo img {
+        width: 40px;
+        height: 40px;
+    }
+
+    main {
+        padding: 1.75em 2em;
+    }
+
+    section h1 {
+        font-size: 2.5em;
+    }
+
+    section h2 {
+        font-size: 1.75em;
+    }
+
+    section p {
+        font-size: 1.35em;
+    }
+
+    /* --- Hero --- */
+    .left-side img {
+        width: 12rem !important;
+    }
+
+    .hero-top {
+        gap: 1.5rem !important;
+    }
+
+    .hero-title {
+        font-size: 2.2rem !important;
+    }
+
+    .hero-actions {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    /* --- Projects --- */
+    .projects {
+        padding: 5rem 8% !important;
+    }
+
+    .section-header h2 {
+        font-size: 1.75rem !important;
+    }
+
+    .featured-project {
+        padding: 1.75rem !important;
+    }
+
+    .project-grid {
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .project-card {
+        flex: 1 1 calc(50% - 0.6rem);
+        min-width: 220px;
+    }
+
+    /* --- Modal --- */
+    .modal-content {
+        width: min(520px, 90%) !important;
+    }
+
+    /* --- Case Study --- */
+    .case-study {
+        padding: 4.5rem 8%;
+    }
+
+    .case-header h3 {
+        font-size: 1.8rem;
+    }
+
+    .role-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* ----------------------------------------------------------
+   LAPTOP / SMALL DESKTOP — max-width: 1200px
+   ---------------------------------------------------------- */
+@media (max-width: 1200px) {
+
+    /* --- Base --- */
+    .decor {
+        width: 18px;
+    }
+
+    nav {
+        padding: 0.95em 1.75em;
+    }
+
+    section h1 {
+        font-size: 2.75em;
+    }
+
+    section h2 {
+        font-size: 1.9em;
+    }
+
+    section p {
+        font-size: 1.4em;
+    }
+
+    main {
+        padding: 1.9em 2em;
+    }
+
+    /* --- Hero --- */
+    .left-side img {
+        width: 13rem !important;
+    }
+
+    .hero-title {
+        font-size: 2.3rem !important;
+    }
+
+    .hero-top {
+        gap: 1.75rem !important;
+    }
+
+    /* --- Projects --- */
+    .projects {
+        padding: 5.5rem 9% !important;
+    }
+
+    .section-header h2 {
+        font-size: 1.9rem !important;
+    }
+
+    .project-card {
+        flex: 1 1 calc(50% - 0.6rem);
+    }
+
+    /* --- Case Study --- */
+    .case-study {
+        padding: 4.75rem 9% !important;
+    }
+
+    .case-header h3 {
+        font-size: 1.9rem !important;
+    }
+
+    .role-grid {
+        grid-template-columns: repeat(3, 1fr) !important;
+    }
+}
+
+/* ----------------------------------------------------------
+   LARGE DESKTOP — min-width: 1201px
+   (Canonical large-screen baseline; restates original values.)
+   ---------------------------------------------------------- */
+@media (min-width: 1201px) {
+
+    /* --- Base --- */
+    .decor {
+        width: 20px;
+    }
+
+    nav {
+        padding: 1em 2em;
+    }
+
+    nav .logo img {
+        width: 45px;
+        height: 45px;
+    }
+
+    nav .logo p {
+        font-size: 0.5em;
+    }
+
+    #brand-logo img {
+        width: 24px;
+        height: 24px;
+    }
+
+    main {
+        padding: 2em;
+    }
+
+    section h1 {
+        font-size: 3em;
+    }
+
+    section h2 {
+        font-size: 2em;
+    }
+
+    section p {
+        font-size: 1.5em;
+    }
+
+    h3 {
+        font-size: 1em;
+    }
+
+    footer {
+        padding: 1em 2em;
+        margin-top: 2em;
+    }
+
+    footer p {
+        font-size: 0.7em;
+    }
+
+    /* --- Hero --- */
+    .left-side img {
+        width: 15rem;
+    }
+
+    .hero-top {
+        gap: 2rem;
+    }
+
+    .hero-title {
+        font-size: 2.5rem;
+    }
+
+    .hero-actions {
+        gap: 12px;
+        margin-top: 2em;
+    }
+
+    .btn {
+        font-size: 0.9rem;
+        padding: 0.7em 1.2em;
+    }
+
+    /* --- Projects --- */
+    .projects {
+        padding: 6rem 10%;
+    }
+
+    .section-header h2 {
+        font-size: 2rem;
+    }
+
+    .featured-project {
+        padding: 2rem;
+        margin-bottom: 4rem;
+    }
+
+    .project-grid {
+        flex-wrap: wrap;
+        gap: 1.2rem;
+    }
+
+    .project-card {
+        padding: 1.2rem;
+    }
+
+    /* --- Modal --- */
+    .modal-content {
+        width: min(600px, 90%);
+        padding: 2rem;
+        gap: 1rem;
+    }
+
+    /* --- Case Study --- */
+    .case-study {
+        padding: 5rem 10%;
+    }
+
+    .case-header h3 {
+        font-size: 2rem;
+    }
+
+    .role-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+    }
+
+    .case-block {
+        padding: 1.5rem;
+        margin-bottom: 2.5rem;
     }
 }
