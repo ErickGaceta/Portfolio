@@ -198,7 +198,7 @@
     }
 
     .role-grid {
-        grid-template-columns: 1fr !important;
+        grid-template-columns: 1fr;
     }
 
     .case-block {
@@ -341,7 +341,7 @@
     }
 
     .role-grid {
-        grid-template-columns: 1fr !important;
+        grid-template-columns: 1fr;
     }
 
     .workflow {
@@ -511,7 +511,7 @@
     }
 
     .role-grid {
-        grid-template-columns: repeat(3, 1fr) !important;
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
