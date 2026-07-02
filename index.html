@@ -21,19 +21,19 @@
             <p>Erick Gaceta</p>
         </div>
         <div id="brand-logo">
-                <a href="mailto:erick.gaceta@example.com" target="_blank" rel="noopener noreferrer">
-                    <img src="./assets/gmail.png" alt="Gmail">
-                </a>
-                <a href="https://facebook.com/erick.gaceta.3" target="_blank" rel="noopener noreferrer">
-                    <img src="./assets/facebook.png" alt="Facebook">
-                </a>
-                <a href="https://www.linkedin.com/in/erick-gaceta-698038273/" target="_blank" rel="noopener noreferrer">
-                    <img src="./assets/linkedin.png" alt="LinkedIn">
-                </a>
-                <a href="https://github.com/ErickGaceta" target="_blank" rel="noopener noreferrer">
-                    <img src="./assets/github.png" alt="Github">
-                </a>
-            </div>
+            <a href="mailto:erick.gaceta@example.com" target="_blank" rel="noopener noreferrer">
+                <img src="./assets/gmail.png" alt="Gmail">
+            </a>
+            <a href="https://facebook.com/erick.gaceta.3" target="_blank" rel="noopener noreferrer">
+                <img src="./assets/facebook.png" alt="Facebook">
+            </a>
+            <a href="https://www.linkedin.com/in/erick-gaceta-698038273/" target="_blank" rel="noopener noreferrer">
+                <img src="./assets/linkedin.png" alt="LinkedIn">
+            </a>
+            <a href="https://github.com/ErickGaceta" target="_blank" rel="noopener noreferrer">
+                <img src="./assets/github.png" alt="Github">
+            </a>
+        </div>
     </nav>
 
 
@@ -85,7 +85,7 @@
         </section>
 
         <section id="projects" class="projects" style="height:130vh;">
-        
+
             <div class="section-header">
                 <h2>Systems Built</h2>
                 <p>
@@ -93,77 +93,84 @@
                     backend logic, and database-driven application design.
                 </p>
             </div>
-        
+
             <!-- FEATURED: OJT SYSTEM -->
             <div class="featured-project">
-        
+
                 <div class="featured-label">Featured System</div>
-        
+
                 <h3>Learning Journal System (OJT)</h3>
-        
+
                 <p>
                     An internal training system designed to track employee learning progress,
-                    structured documentation, and training record management within an organizational workflow environment.
+                    structured documentation, and training record management within an organizational workflow
+                    environment.
                 </p>
-        
+
                 <div class="tech-stack">
                     <span>Laravel</span>
                     <span>PHP</span>
                     <span>MySQL</span>
                     <span>JavaScript</span>
                 </div>
-        
-                <a class="project-link" href="https://github.com/ErickGaceta/LearningJournalSystem">
-                    View GitHub Repository
-                </a>
-        
+
+                <div class="project-links">
+                    <a class="project-link" href="https://github.com/ErickGaceta/LearningJournalSystem">
+                        View GitHub Repository
+                    </a>
+                    <a class="project-link screenshots-link" href="#" onclick="openScreenshotModal(event)">
+                        View Screenshots
+                    </a>
+                </div>
+
             </div>
-        
+
             <!-- CONTRACT SYSTEMS -->
             <div class="project-category">
-        
+
                 <h3>Contract Systems</h3>
-        
+
                 <div class="project-grid">
-        
+
                     <div class="project-card" onclick="openModal('billingModal')">
                         <h4>Billing Enrolment System</h4>
                         <p>Contract-based enrollment and billing management system.</p>
                         <span class="hint">Click to preview</span>
                     </div>
-        
+
                     <div class="project-card" onclick="openModal('elmsModal')">
                         <h4>eLearning Management System</h4>
                         <p>Role-based learning platform for instructors and students.</p>
                         <span class="hint">Click to preview</span>
                     </div>
-        
+
                 </div>
             </div>
-        
+
             <!-- ACADEMIC SYSTEM -->
             <div class="project-category">
-        
+
                 <h3>Academic System</h3>
-        
+
                 <div class="project-grid">
-        
+
                     <div class="project-card">
                         <h4>Library Management System</h4>
                         <p>
                             Academic thesis system implementing library workflows including
                             borrowing, inventory tracking, and administrative record management.
                         </p>
-                        <a href="https://github.com/ErickGaceta/BaguioCentralUniversity_LibraryManagementSystem">GitHub</a>
+                        <a
+                            href="https://github.com/ErickGaceta/BaguioCentralUniversity_LibraryManagementSystem">GitHub</a>
                     </div>
-        
+
                 </div>
             </div>
-        
+
         </section>
 
         <section class="case-study" id="learning-journal" style="height: max-content;">
-        
+
             <div class="case-header">
                 <h1>Case Study</h1>
                 <h2>Learning Journal System</h2>
@@ -171,7 +178,7 @@
                     OJT internal training system for structured documentation and training record management.
                 </p>
             </div>
-        
+
             <!-- PROBLEM -->
             <div class="case-block">
                 <h4>Problem</h4>
@@ -181,7 +188,7 @@
                     inconsistent, and difficult to manage at scale.
                 </p>
             </div>
-        
+
             <!-- OBJECTIVE -->
             <div class="case-block">
                 <h4>Objective</h4>
@@ -190,33 +197,33 @@
                     standardizing outputs, and enabling structured submission of employee training logs.
                 </p>
             </div>
-        
+
             <!-- ROLES -->
             <div class="case-block">
                 <h4>System Roles</h4>
-        
+
                 <div class="role-grid">
                     <div class="role-card">
                         <h5>Admin (MIS)</h5>
                         <p>Manages system oversight and user administration.</p>
                     </div>
-        
+
                     <div class="role-card">
                         <h5>HR / Secretary</h5>
                         <p>Encodes training schedules and manages training data.</p>
                     </div>
-        
+
                     <div class="role-card">
                         <h5>Employee</h5>
                         <p>Submits training documentation outputs per assigned activity.</p>
                     </div>
                 </div>
             </div>
-        
+
             <!-- DATA MODEL -->
             <div class="case-block">
                 <h4>Data Model (Simplified)</h4>
-        
+
                 <ul class="db-list">
                     <li><strong>Roles Table</strong> – Defines system access levels</li>
                     <li><strong>Training Table</strong> – Stores training schedules and activity details</li>
@@ -224,11 +231,11 @@
                     <li><strong>Users Table</strong> – Handles authentication and role mapping</li>
                 </ul>
             </div>
-        
+
             <!-- WORKFLOW -->
             <div class="case-block">
                 <h4>Workflow</h4>
-        
+
                 <div class="workflow">
                     <div>HR encodes training schedules</div>
                     <div class="arrow">→</div>
@@ -239,7 +246,7 @@
                     <div>Admin reviews and manages records</div>
                 </div>
             </div>
-        
+
             <!-- CONTRIBUTION -->
             <div class="case-block highlight">
                 <h4>Key Contribution</h4>
@@ -248,7 +255,7 @@
                     improving consistency, accessibility, and centralized record management.
                 </p>
             </div>
-        
+
             <!-- CONSTRAINT -->
             <div class="case-block note">
                 <h4>Development Context</h4>
@@ -257,7 +264,7 @@
                     functional implementation and role-based workflow correctness.
                 </p>
             </div>
-        
+
         </section>
 
     </main>
@@ -273,21 +280,21 @@
 
     <div id="billingModal" class="modal">
         <div class="modal-content">
-    
+
             <span class="close" onclick="closeModal('billingModal')">&times;</span>
-    
+
             <h2>Billing Enrolment System</h2>
-    
+
             <p>
                 Contract-based system for enrollment and billing workflows
                 supporting student registration, class assignment, and billing tracking.
             </p>
-    
+
             <div class="tech">
                 <h4>Tech Stack</h4>
-                <p style="padding: 0; margin: 0;">Pure PHP  MySQL  HTML  CSS  JavaScript</p>
+                <p style="padding: 0; margin: 0;">Pure PHP MySQL HTML CSS JavaScript</p>
             </div>
-    
+
             <h4>Key Functions</h4>
             <ul>
                 <li>Student enrollment processing</li>
@@ -295,29 +302,29 @@
                 <li>Billing record generation</li>
                 <li>Administrative management</li>
             </ul>
-    
+
             <a class="btn primary" href="https://github.com/your-repo" target="_blank">View GitHub</a>
-    
+
         </div>
     </div>
 
     <div id="elmsModal" class="modal">
         <div class="modal-content">
-    
+
             <span class="close" onclick="closeModal('elmsModal')">&times;</span>
-    
+
             <h2>eLearning Management System</h2>
-    
+
             <p>
                 Contract-based LMS with role-based workflows for admin, instructors,
                 and students managing modules, schedules, and submissions.
             </p>
-    
+
             <div class="tech">
                 <h4>Tech Stack</h4>
                 <p style="padding: 0; margin: 0;">PHP MySQL HTML CSS JavaScript</p>
             </div>
-    
+
             <h4>Core Features</h4>
             <ul>
                 <li>Role-based access control</li>
@@ -325,12 +332,29 @@
                 <li>Submission tracking</li>
                 <li>Schedule management</li>
             </ul>
-    
+
             <a class="btn primary" href="https://github.com/your-repo" target="_blank">View GitHub</a>
-    
+
         </div>
     </div>
+
+    <div class="modal screenshot-modal" id="screenshotModal">
+        <div class="modal-content screenshot-modal-content">
+            <span class="close" onclick="closeScreenshotModal()">&times;</span>
+            <h2>Learning Journal System — Screenshots</h2>
     
+            <div class="screenshot-viewer">
+                <button class="nav-arrow prev" onclick="changeScreenshot(-1)" aria-label="Previous">&#10094;</button>
+                <img id="screenshotMain" src="" alt="Screenshot">
+                <button class="nav-arrow next" onclick="changeScreenshot(1)" aria-label="Next">&#10095;</button>
+            </div>
+    
+            <p class="screenshot-counter"><span id="screenshotIndex">1</span> / <span id="screenshotTotal">12</span></p>
+    
+            <div class="screenshot-thumbs" id="screenshotThumbs"></div>
+        </div>
+    </div>
+
     </section>
 
     <script src="./index.js"></script>

@@ -82,3 +82,77 @@ window.onclick = function (event) {
         }
     });
 };
+
+const screenshots = [
+        './assets/screenshots/1.png',
+        './assets/screenshots/2.png',
+        './assets/screenshots/3.png',
+        './assets/screenshots/4.png',
+        './assets/screenshots/5.png',
+        './assets/screenshots/6.png',
+        './assets/screenshots/7.png',
+        './assets/screenshots/8.png',
+        './assets/screenshots/9.png',
+        './assets/screenshots/10.png',
+        './assets/screenshots/11.png',
+        './assets/screenshots/12.png',
+    ];
+
+    let currentScreenshot = 0;
+
+    function openScreenshotModal(e) {
+        e.preventDefault();
+        buildThumbs();
+        showScreenshot(0);
+        document.getElementById('screenshotModal').style.display = 'flex';
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeScreenshotModal() {
+        document.getElementById('screenshotModal').style.display = 'none';
+        document.body.style.overflow = '';
+    }
+
+    function showScreenshot(i) {
+        currentScreenshot = (i + screenshots.length) % screenshots.length;
+        document.getElementById('screenshotMain').src = screenshots[currentScreenshot];
+        document.getElementById('screenshotIndex').textContent = currentScreenshot + 1;
+
+        document.querySelectorAll('.screenshot-thumbs img').forEach((thumb, idx) => {
+            thumb.classList.toggle('active-thumb', idx === currentScreenshot);
+        });
+    }
+
+    function changeScreenshot(dir) {
+        showScreenshot(currentScreenshot + dir);
+    }
+
+    function buildThumbs() {
+        const container = document.getElementById('screenshotThumbs');
+        if (container.childElementCount) return; // build once
+
+        document.getElementById('screenshotTotal').textContent = screenshots.length;
+
+        screenshots.forEach((src, idx) => {
+            const img = document.createElement('img');
+            img.src = src;
+            img.alt = `Screenshot ${idx + 1}`;
+            img.onclick = () => showScreenshot(idx);
+            container.appendChild(img);
+        });
+    }
+
+    // Keyboard navigation
+    document.addEventListener('keydown', (e) => {
+        const modal = document.getElementById('screenshotModal');
+        if (modal.style.display === 'flex') {
+            if (e.key === 'ArrowRight') changeScreenshot(1);
+            if (e.key === 'ArrowLeft') changeScreenshot(-1);
+            if (e.key === 'Escape') closeScreenshotModal();
+        }
+    });
+
+    // Click outside content to close
+    document.getElementById('screenshotModal').addEventListener('click', (e) => {
+        if (e.target.id === 'screenshotModal') closeScreenshotModal();
+    });
